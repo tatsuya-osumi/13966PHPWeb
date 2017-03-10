@@ -18,43 +18,43 @@
  <form action="regist.php" method="post">
   <table border="1">
    <tr><th>入館希望時間</th>
-       <td><input type="date" name="subject" autofocus> <input type="time" min="09：00" max="17：30" /></td>
+       <td><input type="date" name="day" autofocus> <input type="time" min="09：00" max="23：30" name="time" /></td>
    </tr>
    <tr>
     <th>ご芳名</th>
-    <td>姓<input type="text">名<input type="text"></td>
+    <td>姓<input type="text" name="l_nama1">名<input type="text" name="f_name1"></td>
    </tr>
    <tr>
     <th>ﾌﾘｶﾞﾅ</th>
-    <td>ｾｲ<input type="text">ﾒｲ<input type="text"></td>
+    <td>ｾｲ<input type="text" name="l_name2">ﾒｲ<input type="text" name="f_name2"></td>
    </tr>
    <tr>
     <th>貴社名</th>
-    <td><input type="text" size="50"></td>
+    <td><input type="text" size="50" name="company1"></td>
    </tr>
    <tr>
     <th>ﾌﾘｶﾞﾅ</th>
-    <td><input type="text" size="50"></td>
+    <td><input type="text" size="50" name="company2"></td>
    </tr>
    <tr>
     <th>ﾒｰﾙｱﾄﾞﾚｽ</th>
-    <td><input type="mail"> <font size="-1">*受付完了メールが送信されます</font></td>
+    <td><input type="mail" name="mail"> <font size="-1">*受付完了メールが送信されます</font></td>
    </tr>
    <tr>
     <th>電話番号</th>
-    <td><input type="tel"></td>
+    <td><input type="tel" name="tel"></td>
    </tr>
    <tr>
     <th>訪問先</th>
-    <td><input type="text" size="50"></td>
+    <td><input type="text" size="50" name="destination"></td>
    </tr>
    <tr>
     <th>担当者名</th>
-    <td><input type="text"></td>
+    <td><input type="text" name="staff"></td>
    </tr>
    <tr>
     <th>ご用件</th>
-    <td><input type="text" size="50"></td>
+    <td><input type="text" size="50" name="conf"></td>
    </tr>
   </table><br/>
   <input type="submit" value="確認画面へ">
