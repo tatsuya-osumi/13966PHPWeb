@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>入館予約受付画面</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" >
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+        <script>
+         $(function() {
+          $("#datepicker").datepicker();
+         });
+        </script>
+ </head>
+ <body>
+ <center>
+産経新聞社　入館予約登録
+  <table border="1">
+   <tr><th>入館希望時間</th>
+       <td><input type="date" name="subject" autofocus> <input type="time" min="09：00" max="17：30" /></td>
+   </tr>
+   <tr>
+    <th>ご芳名</th>
+    <td>姓<input type="text">名<input type="text"></td>
+   </tr>
+   <tr>
+    <th>ﾌﾘｶﾞﾅ</th>
+    <td>ｾｲ<input type="text">ﾒｲ<input type="text"></td>
+   </tr>
+   <tr>
+    <th>貴社名</th>
+    <td><input type="text" size="50"></td>
+   </tr>
+   <tr>
+    <th>ﾌﾘｶﾞﾅ</th>
+    <td><input type="text" size="50"></td>
+   </tr>
+   <tr>
+    <th>ﾒｰﾙｱﾄﾞﾚｽ</th>
+    <td><input type="mail"> <font size="-1">*受付完了メールが送信されます</font></td>
+   </tr>
+   <tr>
+    <th>電話番号</th>
+    <td><input type="tel"></td>
+   </tr>
+   <tr>
+    <th>訪問先</th>
+    <td><input type="text" size="50"></td>
+   </tr>
+   <tr>
+    <th>担当者名</th>
+    <td><input type="text"></td>
+   </tr>
+   <tr>
+    <th>ご用件</th>
+    <td><input type="text" size="50"></td>
+   </tr>
+  </table><br/>
+  <input type="submit" value="確認画面へ">
+  </center>
+ </body>
+</html>
