@@ -7,7 +7,7 @@
 <center>
 入力内容を確認してください。<br/>
 問題なければ下部にある『登録ボタン』を押下してください。<p/>
-<form acticon="comp.htm" method="POST">
+<form acticon="comp.php" method="POST">
  <table border="1"><tr><td>
   <table>
    <tr><th>入館希望時間:</th><td><?php echo $_POST["day"] ?> <?php echo $_POST["time"] ?></td></tr>
@@ -30,7 +30,7 @@
  <input type="hidden" name="f_name1" value="<?php echo $_POST["f_name1"] ?>" />
  <input type="hidden" name="f_name2" value="<?php echo $_POST["f_name2"] ?>" /> 
  <input type="hidden" name="company1" value="<?php echo $_POST["company1"] ?>" />
- <input type="hidden" name="company1" value="<?php echo $_POST["company1"] ?>" />
+ <input type="hidden" name="company2" value="<?php echo $_POST["company2"] ?>" />
  <input type="hidden" name="mail" value="<?php echo $_POST["mail"] ?>" />
  <input type="hidden" name="tel" value="<?php echo $_POST["tel"] ?>" />
  <input type="hidden" name="destination" value="<?php echo $_POST["destination"] ?>" />
