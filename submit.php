@@ -22,11 +22,21 @@ if (!$result) {
   exit('文字コードを指定できませんでした。');
 }
 
-$no   = $_REQUEST['no'];
-$name = $_REQUEST['name'];
-$tel  = $_REQUEST['tel'];
+$day         = $_REQUEST['day'];
+$time        = $_REQUEST['time'];
+$l_name1     = $_REQUEST['l_name1'];
+$f_name1     = $_REQUEST['f_name1'];
+$l_name2     = $_REQUEST['l_name2'];
+$f_name2     = $_REQUEST['f_name2'];
+$company1    = $_REQUEST['company1'];
+$company2    = $_REQUEST['company2'];
+$mail        = $_REQUEST['mail'];
+$tel         = $_REQUEST['tel'];
+$destination = $_REQUEST['destination'];
+$staff       = $_REQUEST['staff'];
+$cont        = $_REQUEST['cont'];
 
-$result = mysql_query("INSERT INTO address(no, name, tel) VALUES('$no', '$name', '$tel')", $con);
+$result = mysql_query("INSERT INTO address(day, time, l_nama1, f_name1, l_name2,f_name2, company1, company2, mail, tel, destination, staff, cont) VALUES('$day', '$time', '$l_nama1', '$f_name1', '$l_name2','$f_name27, '$company1', '$company2', '$mail', '$tel', '$destination', '$staff', '$cont')", $con);
 if (!$result) {
   exit('データを登録できませんでした。');
 }
@@ -37,6 +47,6 @@ if (!$con) {
 }
 
 ?>
-<p>登録が完了しました。<br /><a href="index.html">戻る</a></p>
+<p>登録が完了しました。<br /><a href="top.php">戻る</a></p>
 </body>
 </html>
