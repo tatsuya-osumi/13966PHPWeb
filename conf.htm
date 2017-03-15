@@ -7,6 +7,7 @@
 <center>
 入力内容を確認してください。<br/>
 問題なければ下部にある『登録ボタン』を押下してください。<p/>
+<form action="submit.php">
 <table border="1"><tr><td>
   <table>
    <tr><th>入館希望時間:</th><td><?php echo $_POST["day"] ?> <?php echo $_POST["time"] ?></td></tr>
@@ -21,7 +22,9 @@
    <tr><th>ご用件:</th><td><?php echo $_POST["cont"] ?></td></tr>
   </table></td></tr>
 </table><br/>
-<input type="submit" value="登録">
+<input type="submit" value="登録"/>
+</form>
   <br/>
+  </center>
  </body>
 </html>
