@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $mail        = $_POST['mail'];
     $tel         = $_POST['tel'];
     $destination = $_POST['destination'];
-    $staff       = $_POST['staff7];
+    $staff       = $_POST['staff'];
     $cont        = $_POST['cont'];
 
 $newData = $day . "\t" . $time . "\t" . $l_name1 . "\t" . $l_name2 . "\t" $f_name1 . "\t" $f_name2 ."\t"
