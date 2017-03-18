@@ -4,9 +4,21 @@ $dataFile = 'abc.dat';
 
 if ($_SERVER['REQUEST_METHOD']=='POST'){
     $day         = $_POST['day'];
+    $time        = $_POST['time'];
+    $l_name1     = $_POST['l_name1'];
+    $f_name1     = $_POST['f_name1'];
+    $l_name2     = $_POST['l_name2'];
+    $f_name2     = $_POST['f_name2'];
+    $company1    = $_POST['company1'];
+    $company2    = $_POST['company2'];
+    $mail        = $_POST['mail'];
+    $tel         = $_POST['tel'];
+    $destination = $_POST['destination'];
+    $staff       = $_POST['staff7];
+    $cont        = $_POST['cont'];
 
-
-$newData = $day . "\n";
+$newData = $day . "\t" . $time . "\t" . $l_name1 . "\t" . $l_name2 . "\t" $f_name1 . "\t" $f_name2 ."\t"
+           $company1 . "\t" . $comppany2 . "\t" . $mail . "\t" . $tel . "\t" . $destination . "\t" . $staff . "\t" . $cont . "\n";
            
 $fp = fopen($dataFile,'a');
 fwrite($fp,$newData);
