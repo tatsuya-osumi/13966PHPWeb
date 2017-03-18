@@ -15,10 +15,10 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
     $tel         = $_POST['tel'];
     $destination = $_POST['destination'];
     $staff       = $_POST['staff7];
-    $cont        = $_POST['cont'];
+
 
 $newData = $day . "\t" . $time . "\t" . $l_name1 . "\t" . $l_name2 . "\t" $f_name1 . "\t" $f_name2 ."\t"
-           $company1 . "\t" . $comppany2 . "\t" . $mail . "\t" . $tel . "\t" . $destination . "\t" . $staff . "\t" . $cont . "\n";
+           $company1 . "\t" . $comppany2 . "\t" . $mail . "\t" . $tel . "\t" . $destination . "\t" . $staff . "\n";
            
 $fp = fopen($dataFile,'a');
 fwrite($fp,$newData);
