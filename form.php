@@ -20,14 +20,16 @@ if ($_SERVER['REQUEST_METHOD']=='POST'){
 $newData = $day . "\t" . $time . "\t" . $l_name1 . "\t" . $l_name2 . "\t" $f_name1 . "\t" $f_name2 ."\t"
            $company1 . "\t" . $comppany2 . "\t" . $mail . "\t" . $tel . "\t" . $destination . "\t" . $staff . "\t" . $cont . "\n";
            
-$fp = fopen($dataFile.'a');
+$fp = fopen($dataFile,'a');
 fwrite($fp,$newData);
 fclose($fp);
 
 }
 
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="ja">
  <head>
   <title>入館予約受付画面</title>
   <meta charset="UTF-8"/>
