@@ -6,7 +6,7 @@
 <body>
 <?php
 
-$con = mysql_connect('127.0.0.1', 'root', '1234');
+$con = mysql_connect('us-cdbr-iron-east-03.cleardb.net', 'b1b8e502d991e6', 'e52e3992');
 if (!$con) {
   exit('データベースに接続できませんでした。');
 }
