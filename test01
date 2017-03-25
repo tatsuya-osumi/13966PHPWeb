@@ -4,7 +4,7 @@
 <title>アドレス登録</title>
 </head>
 <body>
-<form action="regist.php" method="post">
+<form action="test02.php" method="post">
   登録番号：<br />
   <input type="text" name="no" size="10" value="" /><br />
   氏名：<br />
