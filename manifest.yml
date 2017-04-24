@@ -3,6 +3,6 @@ applications:
   memory: 128M
   instances: 1
   domain: mybluemix.net
-  name: 13966PHPWeb
-  host: 13966PHPWeb
+  name: 13966OSUMIPHPWeb
+  host: 13966OSUMIPHPWeb
   disk_quota: 1024M
