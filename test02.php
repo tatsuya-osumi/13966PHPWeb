@@ -8,7 +8,7 @@
 
 $con = mysql_connect('us-cdbr-iron-east-03.cleardb.net:3306', 'b1b8e502d991e6', 'e52e3992');
 if (!$con) {
-  exit('データベースに接続できませんでした。');
+  exit('データベースに接続できませんでした!');
 }
 
 $result = mysql_select_db('phpdb', $con);
